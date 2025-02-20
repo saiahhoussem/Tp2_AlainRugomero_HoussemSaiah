@@ -1,0 +1,16 @@
+/** VOS $VARIABLES Sass ici avant l'importation**/
+// Exemple de variable
+$couleurH1:blue;
+
+
+
+/*** Importation de Boostrap **/
+@import "partials/bootstrap";
+
+/*** Début des styles personnalisés ***/
+// Exemple de style personnalisé
+h1
+{
+    color : $couleurH1;
+    font-size: 4em;
+}
