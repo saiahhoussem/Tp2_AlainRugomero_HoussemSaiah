@@ -11979,11 +11979,6 @@ textarea.form-control-lg {
   }
 }
 /*** Début des styles personnalisés ***/
-h1, .h1 {
-  color: #cbad67;
-  font-size: 4em;
-}
-
 .texte-pour-lecteur {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -12000,78 +11995,79 @@ h1, .h1 {
 
 body {
   background-color: hsl(40, 86%, 86%);
-}
-body .wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-body .wrapper main {
-  flex: 1;
+  margin: 0 auto;
 }
 
 header {
   background-color: #9f582a;
 }
-header img {
-  margin-left: -140px;
+header .boutton-header {
+  margin-top: 6.5em;
 }
-header .navbar {
+header .btn {
+  background-color: #2d1101;
+  color: #f8eaa9;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex-de {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-navbar {
   background-color: #f8eaa9;
   border-bottom: 3.5px solid #2d1101;
   border-top: 3.5px solid #2d1101;
-}
-header .navbar .container-fluid, header .navbar .container-sm, header .navbar .container-md, header .navbar .container-lg, header .navbar .container-xl, header .navbar .container-xxl {
-  margin-left: 230px;
-}
-header .navbar .btn {
-  margin-right: -100em;
-}
-header .btn {
-  margin-top: 4.5em;
-  background-color: #2d1101;
-  color: #f8eaa9;
+  font-size: 20px;
 }
 
 footer {
   background-color: #9f582a;
   text-align: center;
-  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 footer .con-1 p {
   color: #f8eaa9;
   font-size: 25px;
 }
-footer .container-2 {
-  display: flex;
-  justify-content: center;
+footer .carte {
+  border-bottom: 2px solid #cbad67;
 }
-footer .container-2 .col {
-  margin: 20px 80px 20px 80px;
+footer .carte > div {
   background-color: #f8eaa9;
-  height: 180px;
   border-radius: 10%;
   box-shadow: 5px 5px 10px #2d1101;
 }
-footer .container-2 .col img {
+footer .carte > div img {
   margin-top: 15px;
   height: 60px;
   width: 60px;
 }
-footer .container-2 .col p {
+footer .carte > div p {
   margin-top: 10px;
 }
-footer .container-2 .col a {
+footer .carte > div a {
   text-decoration: none;
   color: #2d1101;
   font-size: 13px;
 }
-footer .container-2 .col a:hover {
+footer .carte > div a:hover {
   text-decoration: underline;
 }
-footer hr {
-  border: none;
-  height: 2px;
-  background-color: #f8eaa9;
-  margin: 10px 240px;
+footer .carte + div p {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-de {
+    flex-direction: column;
+  }
+  .flex-de .boutton-header {
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */

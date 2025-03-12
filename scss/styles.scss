@@ -13,12 +13,7 @@ $couleurH5:hsl(40, 86%, 86%);
 @import "partials/bootstrap";
 
 /*** Début des styles personnalisés ***/
-// Exemple de style personnalisé
-h1
-{
-    color : $couleurH1;
-    font-size: 4em;
-}
+// Exemple de style personnalisé  
 
 // Accéssibilité au cas où.
 .texte-pour-lecteur {
@@ -36,48 +31,46 @@ h1
 
 body{
     background-color: $couleurH5;
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        main {
-            flex: 1;
-        }
-    }
+    margin: 0 auto;
 }
 
 header{
     background-color: $couleurH2;
-    img{
-        margin-left: -140px;
-    }
 
 
-    .navbar{
-        background-color: $couleurH0;
-        border-bottom: 3.5px solid $couleurH4;
-        border-top: 3.5px solid $couleurH4;
-        .container-fluid{
-            margin-left: 230px;
-        }
-        .btn{
-            margin-right: -100em;
-        }
+    .boutton-header{
+        margin-top: 6.5em;
     }
     
     .btn{
-        margin-top: 4.5em;
+        
         background-color: $couleurH4;
         color: $couleurH0;
     }
 }
 
+img{
+    max-width: 100%;
+}
 
+.flex-de{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bg-navbar{
+        background-color: $couleurH0;
+        border-bottom: 3.5px solid $couleurH4;
+        border-top: 3.5px solid $couleurH4;
+        font-size: 20px;
+}
 
 footer{
     background-color: $couleurH2;
     text-align: center;
-    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     .con-1{
         p{
             color: $couleurH0;
@@ -85,13 +78,14 @@ footer{
         }        
     }
     
-    .container-2{
-        display: flex;
-        justify-content: center;
-        .col{
-            margin: 20px 80px 20px 80px;
+    .carte{
+
+        border-bottom:2px solid $couleurH1;
+        
+        > div{
+
             background-color: $couleurH0;
-            height: 180px;
+            
             
             border-radius: 10%;
             box-shadow: 5px 5px 10px $couleurH4;
@@ -111,15 +105,24 @@ footer{
                 text-decoration: underline;
             }
             }
+    
+        }
+
+        + div p{
+            margin-top: 15px;
         }
        
 
     }
-    hr {
-        border: none;  
-        height: 2px;   
-        background-color: $couleurH0;  
-        margin: 10px 240px;  
-    }
     
 }
+
+
+@media screen and ( max-width: 768px ) {
+    .flex-de{
+        flex-direction: column;
+        .boutton-header{
+            margin-top: 0;
+        }
+    }
+}   
