@@ -12038,39 +12038,35 @@ footer {
   text-align: center;
   padding: 10px;
 }
-footer .con-1 p, footer .con-2 p {
+footer .con-1 p {
   color: #f8eaa9;
   font-size: 25px;
-}
-footer .con-2 p {
-  font-size: 13px;
 }
 footer .container-2 {
   display: flex;
   justify-content: center;
 }
-footer .container-2 .card {
+footer .container-2 .col {
   margin: 20px 80px 20px 80px;
   background-color: #f8eaa9;
   height: 180px;
-  width: 240px;
   border-radius: 10%;
   box-shadow: 5px 5px 10px #2d1101;
 }
-footer .container-2 .card img {
+footer .container-2 .col img {
   margin-top: 15px;
   height: 60px;
   width: 60px;
 }
-footer .container-2 .card p {
+footer .container-2 .col p {
   margin-top: 10px;
 }
-footer .container-2 .card a {
+footer .container-2 .col a {
   text-decoration: none;
   color: #2d1101;
   font-size: 13px;
 }
-footer .container-2 .card a:hover {
+footer .container-2 .col a:hover {
   text-decoration: underline;
 }
 footer hr {

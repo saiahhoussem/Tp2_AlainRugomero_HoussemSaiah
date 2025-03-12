@@ -84,22 +84,15 @@ footer{
             font-size: 25px;
         }        
     }
-
-    .con-2{
-        @extend .con-1;
-        p{
-            font-size: 13px;
-        }  
-    }
     
     .container-2{
         display: flex;
         justify-content: center;
-        .card{
+        .col{
             margin: 20px 80px 20px 80px;
             background-color: $couleurH0;
             height: 180px;
-            width: 240px;
+            
             border-radius: 10%;
             box-shadow: 5px 5px 10px $couleurH4;
             img{
@@ -119,7 +112,7 @@ footer{
             }
             }
         }
-        
+       
 
     }
     hr {
