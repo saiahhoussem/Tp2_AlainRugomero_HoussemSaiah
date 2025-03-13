@@ -18,65 +18,158 @@
 
 
 <body>
-    <div class="wrapper">
-        <header>
-            <div>
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col">
-                            <img src="resources/logo/logo.png" alt="Logo Game Of Thrones" width="250">
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-secondary btn-lg">Ouvrir une session</button>
+    <a href="#contenu_principal" class="texte-pour-lecteur">Allez vers contenu principal</a>
+    <header>
+        <div class="container text-center p-3">
+            <div class="flex-de">
+                <div>
+                    <img src="resources/logo/logo.png" alt="Logo Game Of Thrones" width="250">
+                </div>
+                <div class="boutton-header">
+                    <button type="button" class="btn btn-secondary btn-md">Ouvrir une session</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="bg-navbar">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg w-100 sticky-top">
+                <div class="container-fluid container">
+
+                    <a class="navbar-brand" href="#">Navigation:</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="index.html">Acceuil</a>
+                            <a class="nav-link" href="personnages.html">Personnages</a>
+                            <a class="nav-link active" aria-current="page" href="description.html">Description des
+                                personnages</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </div>
                     </div>
                 </div>
+            </nav>
+        </div>
+    </div>
 
-                <nav class="navbar navbar-expand-lg w-100">
-                    <div class="container-fluid container">
 
-                        <a class="navbar-brand" href="#">Navigation:</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-link" href="index.html">Acceuil</a>
-                                <a class="nav-link" href="personnages.html">Personnages</a>
-                                <a class="nav-link active" aria-current="page" href="description.html">Description des
-                                    personnages</a>
-                                <a class="nav-link" href="contact.html">Contact</a>
+    <main id="contenu_principal" aria-label="contenu principal" class=" mt-5 mb-5 container">
+
+
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-12 col-md-12 col-lg-3 bg-warning custom-height">
+
+                    <form method="post" action="#">
+                        <h2 class="mt-2">Newsletter</h2>
+                        <div class="mb-3">
+                            <label for="inputPrenom" class="form-label">Prénom</label>
+                            <input type="text" class="form-control" id="inputPrenom" name="inputPrenom">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputNom" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="inputNom" name="inputNom">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Courriel</label>
+                            <input type="email" class="form-control" id="inputEmail" name="inputEmail">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="inputNotif" name="inputNotif">
+                            <label class="form-check-label" for="inputNotif">J'accepte de recevoir des
+                                communications</label>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <button type="submit" class="btn btn-primary w-100">soumettre</button>
                             </div>
                         </div>
-                    </div>
-                </nav>
+
+                    </form>
+
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-9">
+
+                    <h2>Description des personnages</h2>
+
+                    <h3>Personnage 1: Tormund Giantsbane</h3>
+
+                    <p>Lorem ipsum dolor <a href="#">sit, amet consectetur adipisicing elit.</a> Quaerat quo facilis
+                        quos, enim id sint
+                        dolorum in unde quis fuga obcaecati quae consequatur eos iusto at ex! Quia, distinctio
+                        voluptate.
+                        Necessitatibus, nostrum recusandae. Sapiente veniam laudantium harum quo culpa, omnis illum!
+                        Unde voluptates fugiat, sunt quibusdam at aperiam earum aut eligendi itaque inventore velit
+                        quaerat illum soluta ipsa perspiciatis molestias!
+                        Quo aperiam rem numquam aliquam accusantium tenetur, similique ut iusto, maxime neque unde
+                        possimus quidem nulla nobis delectus voluptas nihil vitae corporis natus. Est ex, quod dolorum
+                        quam esse facere.
+                    </p>
+
+                    <img class="img-fluid w-100" src="resources/images/Tormund.jpeg"
+                        alt="Personnages Tormund de la série Game of thrones">
+
+
+                    <h2>Personnage 2: John snow</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias voluptatem earum natus iste,
+                        nulla dolore totam corrupti incidunt atque quia? Quaerat et dolores distinctio ipsa quis in.
+                        Voluptatibus, deserunt.
+                        Earum facere, similique quam inventore quaerat sint assumenda culpa, ratione odit deserunt,
+                        fugit dolore corporis sequi veniam aliquid. Repudiandae magnam nesciunt laborum corporis?
+                        Nesciunt asperiores, animi qui voluptates assumenda deleniti!
+                        Unde illum veniam cupiditate nihil quam similique fugiat numquam omnis odio architecto expedita
+                        delectus dolore velit in ullam ratione impedit ab doloremque, molestiae earum quaerat! Tempore
+                        ipsa laboriosam maiores iusto.
+                    </p>
+
+                    <img class="img-fluid w-100" src="resources/images/John_snow.jpeg"
+                        alt="Personnage John snow de la série Game of thrones">
+
+                    <h2>Personnage 3: Night King</h2>
+
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus eos repellendus temporibus
+                        quibusdam repudiandae quod molestiae animi laboriosam. Corporis sint ab consectetur blanditiis
+                        nihil totam vero itaque sit in qui.
+                        Qui non a consequatur laborum, tempore est animi culpa exercitationem quam sequi aperiam
+                        distinctio, dolorem aut soluta! Dolore, omnis commodi? Magnam doloribus consectetur odit
+                        exercitationem totam harum architecto fugit ipsam!
+                        Debitis laborum quibusdam dignissimos architecto. Omnis, quisquam earum cumque non doloribus
+                        odit! Velit non modi natus illum in a commodi optio consequuntur ducimus eaque! Reprehenderit
+                        unde ipsam a facilis mollitia!
+                    </p>
+
+                    <img class="img-fluid w-100" src="resources/images/Knight_King.jpeg"
+                        alt="Personnage méchant, Night King de l'univers Game of thrones">
+
+                </div>
+
             </div>
-        </header>
+        </div>
+    </main>
 
-        <main>
-
-            <section>
-
-            </section>
-
-
-
-            <section class="row">
-
-            </section>
-
-        </main>
-
-        <footer>
+    <footer>
+        <div class="container">
             <div class="con-1">
                 <p>
                     Pour nous rejoindre
                 </p>
             </div>
-            <div class="row container-2">
-                <div class="col card card-1">
+            <div class="row carte">
+
+                <div class="col-md rounded-4 m-3">
                     <div>
                         <img src="resources/icons/facebook.png" alt="facebook-icon">
                     </div>
@@ -88,7 +181,7 @@
                                 target="_blank">https://www.facebook.com/Danger</a></p>
                     </div>
                 </div>
-                <div class="col card card-2">
+                <div class="col-md rounded-4 m-3">
                     <div>
                         <img src="resources/icons/courriel.png" alt="facebook-icon">
                     </div>
@@ -99,7 +192,7 @@
                         <p><a href="mailto:example@email.com">stupidcybertruck@gmail.com</a></p>
                     </div>
                 </div>
-                <div class="col card card-3">
+                <div class="col-md rounded-4 m-3">
                     <div>
                         <img src="resources/icons/instagram.png" alt="facebook-icon">
                     </div>
@@ -112,14 +205,14 @@
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="con-2">
+
+            <div>
                 <p>
                     Concepteurs du site: Alain Rugomero / Houssem Saiah
                 </p>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
 
     <!-- Scripts de Bootstrap NE PAS RETIRER -->

@@ -18,70 +18,62 @@
 
 
 <body>
-    <div class="wrapper">
-        <header>
-            <div>
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col">
-                            <img src="resources/logo/logo.png" alt="Logo Game Of Thrones" width="250">
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-secondary btn-lg">Ouvrir une session</button>
+    <a href="#contenu_principal" class="texte-pour-lecteur">Allez vers contenu principal</a>
+    <header>
+        <div class="container text-center p-3">
+            <div class="flex-de">
+                <div>
+                    <img src="resources/logo/logo.png" alt="Logo Game Of Thrones" width="250">
+                </div>
+                <div class="boutton-header">
+                    <button type="button" class="btn btn-secondary btn-md">Ouvrir une session</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="bg-navbar">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg w-100 sticky-top">
+                <div class="container-fluid container">
+
+                    <a class="navbar-brand" href="#">Navigation:</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="index.html">Acceuil</a>
+                            <a class="nav-link active" aria-current="page" href="personnages.html">Personnages</a>
+                            <a class="nav-link" href="description.html">Description des personnages</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </div>
                     </div>
                 </div>
-
-                <nav class="navbar navbar-expand-lg w-100">
-                    <div class="container-fluid container">
-
-                        <a class="navbar-brand" href="#">Navigation:</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-link" href="index.html">Acceuil</a>
-                                <a class="nav-link active" aria-current="page" href="personnages.html">Personnages</a>
-                                <a class="nav-link" href="description.html">Description des personnages</a>
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-
-        <main>
-
-            <section>
-
-            </section>
+            </nav>
+        </div>
+    </div>
 
 
+    <main id="contenu_principal" aria-label="contenu principal" class="container">
+        
 
-            <section class="row">
+    </main>
 
-            </section>
-
-        </main>
-
-
-
-
-
-
-
-        <footer>
+    <footer>
+        <div class="container">
             <div class="con-1">
                 <p>
                     Pour nous rejoindre
                 </p>
             </div>
-            <div class="row container-2">
-                <div class="col card card-1">
+            <div class="row carte">
+
+                <div class="col-md rounded-4 m-3">
                     <div>
                         <img src="resources/icons/facebook.png" alt="facebook-icon">
                     </div>
@@ -93,7 +85,7 @@
                                 target="_blank">https://www.facebook.com/Danger</a></p>
                     </div>
                 </div>
-                <div class="col card card-2">
+                <div class="col-md rounded-4 m-3">
                     <div>
                         <img src="resources/icons/courriel.png" alt="facebook-icon">
                     </div>
@@ -104,7 +96,7 @@
                         <p><a href="mailto:example@email.com">stupidcybertruck@gmail.com</a></p>
                     </div>
                 </div>
-                <div class="col card card-3">
+                <div class="col-md rounded-4 m-3">
                     <div>
                         <img src="resources/icons/instagram.png" alt="facebook-icon">
                     </div>
@@ -117,14 +109,14 @@
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="con-2">
+            
+            <div>
                 <p>
                     Concepteurs du site: Alain Rugomero / Houssem Saiah
                 </p>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
 
     <!-- Scripts de Bootstrap NE PAS RETIRER -->

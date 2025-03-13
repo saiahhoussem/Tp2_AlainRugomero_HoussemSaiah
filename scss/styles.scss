@@ -1,21 +1,9 @@
-/** VOS $VARIABLES Sass ici avant l'importation**/
-// Exemple de variable
-$couleurH0:#f8eaa9;
-$couleurH1:#cbad67;
-$couleurH2:#9f582a;
-$couleurH3:#635958;
-$couleurH4:#2d1101;
-$couleurH5:hsl(40, 86%, 86%);
-
-
-
-/*** Importation de Boostrap **/
+/*** Importation de Bootstrap ***/
 @import "partials/bootstrap";
 
-/*** Début des styles personnalisés ***/
-// Exemple de style personnalisé  
+/*** Styles personnalisés ***/
 
-// Accéssibilité au cas où.
+// Accessibilité
 .texte-pour-lecteur {
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
@@ -29,100 +17,93 @@ $couleurH5:hsl(40, 86%, 86%);
     word-wrap: normal !important;
 }
 
-body{
+body {
     background-color: $couleurH5;
     margin: 0 auto;
 }
 
-header{
+header {
     background-color: $couleurH2;
 
-
-    .boutton-header{
+    .boutton-header {
         margin-top: 6.5em;
     }
-    
-    .btn{
-        
+
+    .btn {
         background-color: $couleurH4;
         color: $couleurH0;
     }
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-.flex-de{
+.flex-de {
     display: flex;
     justify-content: space-between;
 }
 
-
-.bg-navbar{
-        background-color: $couleurH0;
-        border-bottom: 3.5px solid $couleurH4;
-        border-top: 3.5px solid $couleurH4;
-        font-size: 20px;
+.bg-navbar {
+    background-color: $couleurH0;
+    border-bottom: 3.5px solid $couleurH4;
+    border-top: 3.5px solid $couleurH4;
+    font-size: 20px;
 }
 
-footer{
+footer {
     background-color: $couleurH2;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    .con-1{
-        p{
-            color: $couleurH0;
-            font-size: 25px;
-        }        
+    padding: 15px 0;
+
+    .con-1 p {
+        color: $couleurH0;
+        font-size: 25px;
     }
-    
-    .carte{
 
-        border-bottom:2px solid $couleurH1;
-        
-        > div{
+    .carte {
+        border-bottom: 2px solid $couleurH1;
 
+        > div {
             background-color: $couleurH0;
-            
-            
             border-radius: 10%;
             box-shadow: 5px 5px 10px $couleurH4;
-            img{
+            padding: 10px;
+            text-align: center;
+
+            img {
                 margin-top: 15px;
                 height: 60px;
                 width: 60px;
             }
-            p{
+
+            p {
                 margin-top: 10px;
             }
+
             a {
-            text-decoration: none;
-            color: $couleurH4;
-            font-size: 13px;
-            &:hover{
-                text-decoration: underline;
-            }
-            }
-    
-        }
+                text-decoration: none;
+                color: $couleurH4;
+                font-size: 13px;
 
-        + div p{
-            margin-top: 15px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
-       
-
     }
-    
 }
 
+.custom-height {
+    height: 60vh;
+}
 
-@media screen and ( max-width: 768px ) {
-    .flex-de{
+@media screen and (max-width: 768px) {
+    .flex-de {
         flex-direction: column;
-        .boutton-header{
+
+        .boutton-header {
             margin-top: 0;
         }
     }
-}   
+}
