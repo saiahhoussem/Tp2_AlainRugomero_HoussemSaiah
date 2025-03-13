@@ -11980,11 +11980,11 @@ textarea.form-control-lg {
 }
 /*** Début des styles personnalisés ***/
 h1, .h1 {
-  color: blue;
+  color: #cbad67;
   font-size: 4em;
 }
 
-Form .texte-pour-lecteur {
+.texte-pour-lecteur {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
