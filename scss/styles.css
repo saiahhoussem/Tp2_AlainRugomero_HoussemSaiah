@@ -12063,6 +12063,10 @@ footer .carte + div p {
   margin-top: 15px;
 }
 
+.custom-height {
+  height: 60vh;
+}
+
 @media screen and (max-width: 768px) {
   .flex-de {
     flex-direction: column;
