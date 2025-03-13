@@ -11979,11 +11979,6 @@ textarea.form-control-lg {
   }
 }
 /*** Début des styles personnalisés ***/
-h1, .h1 {
-  color: blue;
-  font-size: 4em;
-}
-
 .texte-pour-lecteur {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -11996,4 +11991,83 @@ h1, .h1 {
   position: absolute;
   width: 1px;
   word-wrap: normal !important;
+}
+
+body {
+  background-color: hsl(40, 86%, 86%);
+  margin: 0 auto;
+}
+
+header {
+  background-color: #9f582a;
+}
+header .boutton-header {
+  margin-top: 6.5em;
+}
+header .btn {
+  background-color: #2d1101;
+  color: #f8eaa9;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex-de {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-navbar {
+  background-color: #f8eaa9;
+  border-bottom: 3.5px solid #2d1101;
+  border-top: 3.5px solid #2d1101;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #9f582a;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+footer .con-1 p {
+  color: #f8eaa9;
+  font-size: 25px;
+}
+footer .carte {
+  border-bottom: 2px solid #cbad67;
+}
+footer .carte > div {
+  background-color: #f8eaa9;
+  border-radius: 10%;
+  box-shadow: 5px 5px 10px #2d1101;
+}
+footer .carte > div img {
+  margin-top: 15px;
+  height: 60px;
+  width: 60px;
+}
+footer .carte > div p {
+  margin-top: 10px;
+}
+footer .carte > div a {
+  text-decoration: none;
+  color: #2d1101;
+  font-size: 13px;
+}
+footer .carte > div a:hover {
+  text-decoration: underline;
+}
+footer .carte + div p {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-de {
+    flex-direction: column;
+  }
+  .flex-de .boutton-header {
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */

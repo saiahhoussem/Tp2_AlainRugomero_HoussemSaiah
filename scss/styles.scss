@@ -1,6 +1,11 @@
 /** VOS $VARIABLES Sass ici avant l'importation**/
 // Exemple de variable
-$couleurH1:blue;
+$couleurH0:#f8eaa9;
+$couleurH1:#cbad67;
+$couleurH2:#9f582a;
+$couleurH3:#635958;
+$couleurH4:#2d1101;
+$couleurH5:hsl(40, 86%, 86%);
 
 
 
@@ -14,10 +19,6 @@ h1
     color : $couleurH1;
     font-size: 4em;
 }
-Form
-
-
-
 
 // Accéssibilité au cas où.
 .texte-pour-lecteur {
@@ -32,4 +33,3 @@ Form
     width: 1px;
     word-wrap: normal !important;
 }
-
