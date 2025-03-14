@@ -41,6 +41,8 @@ img {
     border-top: 3.5px solid $couleurH4;
 }
 
+
+
 footer {
     background-color: $couleurH2;
     text-align: center;
@@ -84,7 +86,9 @@ footer {
     }
 }
 
-.custom-height {
-    height: 60vh;
+@media screen and (max-width: 1200px) {
+    .boutton-soumettre .btn{
+        width: 100%;
+    }
 }
 
