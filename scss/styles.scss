@@ -1,17 +1,7 @@
 /*** Importation de Bootstrap ***/
 @import "partials/bootstrap";
 
-<<<<<<< HEAD
-/*** Début des styles personnalisés ***/
-// Exemple de style personnalisé
-h1
-{
-    color : $couleurH1;
-    font-size: 4em;
-}
-=======
 /*** Styles personnalisés ***/
->>>>>>> 2db9c62c22b5407ba27b86a82968844ab13d17bd
 
 // Accessibilité
 .texte-pour-lecteur {
@@ -25,9 +15,6 @@ h1
     position: absolute;
     width: 1px;
     word-wrap: normal !important;
-<<<<<<< HEAD
-}
-=======
 }
 
 body {
@@ -37,10 +24,6 @@ body {
 
 header {
     background-color: $couleurH2;
-
-    .boutton-header {
-        margin-top: 6.5em;
-    }
 
     .btn {
         background-color: $couleurH4;
@@ -52,16 +35,10 @@ img {
     max-width: 100%;
 }
 
-.flex-de {
-    display: flex;
-    justify-content: space-between;
-}
-
 .bg-navbar {
     background-color: $couleurH0;
     border-bottom: 3.5px solid $couleurH4;
     border-top: 3.5px solid $couleurH4;
-    font-size: 20px;
 }
 
 footer {
@@ -69,7 +46,7 @@ footer {
     text-align: center;
     padding: 15px 0;
 
-    .con-1 p {
+    h2 {
         color: $couleurH0;
         font-size: 25px;
     }
@@ -111,13 +88,3 @@ footer {
     height: 60vh;
 }
 
-@media screen and (max-width: 768px) {
-    .flex-de {
-        flex-direction: column;
-
-        .boutton-header {
-            margin-top: 0;
-        }
-    }
-}
->>>>>>> 2db9c62c22b5407ba27b86a82968844ab13d17bd
