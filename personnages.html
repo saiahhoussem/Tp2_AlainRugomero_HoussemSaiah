@@ -6,7 +6,7 @@
 
     <!-- Pour s'assurer d'un affichage correct sur mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="">
     <!-- Styles de Boostrap + Styles personnalisés provenant de styles.scss -->
     <link rel="stylesheet" href="scss/styles.css">
     <!-- Nous n'aurons pas besoin de normalize.css, car il existe des styles
@@ -18,7 +18,7 @@
 
 
 <body>
-    <a href="#contenu_principal" class="texte-pour-lecteur">Allez vers contenu principal</a>
+    <a href="#contenu_principal_1" class="texte-pour-lecteur">Allez vers contenu principal</a>
     <header>
         <div class="container text-center p-3">
             <div class="flex-de">
@@ -36,7 +36,7 @@
     <div class="bg-navbar">
         <div class="container">
 
-            <nav class="navbar navbar-expand-lg w-100 sticky-top">
+            <nav class="navbar navbar-expand-lg w-100 sticky-top" aria-label="navigation principal">
                 <div class="container-fluid container">
 
                     <a class="navbar-brand" href="#">Navigation:</a>
@@ -59,8 +59,97 @@
     </div>
 
 
-    <main id="contenu_principal" aria-label="contenu principal" class="container">
-        
+    <main id="contenu_principal_1" aria-label="contenu principal" class="container mt-5 mb-5">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+
+                    <form method="post" action="#" class="bg-warning p-3 rounded-2 me-3">
+                        <p style="font-size: 30px;">Newsletter</p>
+                        <div class="mb-3">
+                            <label for="inputPrenom" class="form-label">Prénom</label>
+                            <input type="text" class="form-control" id="inputPrenom" name="inputPrenom">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputNom" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="inputNom" name="inputNom">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Courriel</label>
+                            <input type="email" class="form-control" id="inputEmail" name="inputEmail">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="inputNotif" name="inputNotif">
+                            <label class="form-check-label" for="inputNotif">J'accepte de recevoir des
+                                communications</label>
+                        </div>
+
+                        <div class="boutton-soumettre">
+                            <input type="submit" class="btn btn-primary" value="soumettre"/>
+                        </div>
+                        
+
+                    </form>
+
+                </div>
+
+                <div class="col-md-9 row">
+
+                    <h1>Liste des personnages</h1>
+                    <div class="card mt-2" style="width: 18rem; background-color: transparent; border: none;">
+                        <img src="resources/images/joffrey-baratheon.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="margin-left: -15px;">Card title</h5>
+                            <a href="description.html#personnage_1" class="btn btn-primary"
+                                style="margin-left: -15px;">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card mt-2" style="width: 18rem; background-color: transparent; border: none;">
+                        <img src="resources/images/joffrey-baratheon.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card mt-2" style="width: 18rem; background-color: transparent; border: none;">
+                        <img src="resources/images/joffrey-baratheon.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card mt-2" style="width: 18rem; background-color: transparent; border: none;">
+                        <img src="resources/images/joffrey-baratheon.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card mt-2" style="width: 18rem; background-color: transparent; border: none;">
+                        <img src="resources/images/joffrey-baratheon.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card mt-2" style="width: 18rem; background-color: transparent; border: none;">
+                        <img src="resources/images/joffrey-baratheon.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
 
     </main>
 
@@ -109,7 +198,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div>
                 <p>
                     Concepteurs du site: Alain Rugomero / Houssem Saiah

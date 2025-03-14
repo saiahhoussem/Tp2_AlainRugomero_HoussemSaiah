@@ -51,6 +51,8 @@ img {
     font-size: 20px;
 }
 
+
+
 footer {
     background-color: $couleurH2;
     text-align: center;
@@ -94,8 +96,10 @@ footer {
     }
 }
 
-.custom-height {
-    height: 60vh;
+@media screen and (max-width: 1200px) {
+    .boutton-soumettre .btn{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -106,4 +110,7 @@ footer {
             margin-top: 0;
         }
     }
+
 }
+
+

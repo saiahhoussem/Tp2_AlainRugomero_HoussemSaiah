@@ -7,6 +7,7 @@
     <!-- Pour s'assurer d'un affichage correct sur mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="">
     <!-- Styles de Boostrap + Styles personnalisés provenant de styles.scss -->
     <link rel="stylesheet" href="scss/styles.css">
     <!-- Nous n'aurons pas besoin de normalize.css, car il existe des styles
@@ -18,7 +19,7 @@
 
 
 <body>
-    <a href="#contenu_principal" class="texte-pour-lecteur">Allez vers contenu principal</a>
+    <a href="#contenu_principal_3" class="texte-pour-lecteur">Allez vers contenu principal</a>
     <header>
         <div class="container text-center p-3">
             <div class="flex-de">
@@ -36,7 +37,7 @@
     <div class="bg-navbar">
         <div class="container">
 
-            <nav class="navbar navbar-expand-lg w-100 sticky-top">
+            <nav class="navbar navbar-expand-lg w-100 sticky-top" aria-label="navigation principal">
                 <div class="container-fluid container">
 
                     <a class="navbar-brand" href="#">Navigation:</a>
@@ -59,12 +60,12 @@
     </div>
 
 
-    <main id="contenu_principal" aria-label="contenu principal" class="mt-5 mb-5 container">
+    <main id="contenu_principal_3" aria-label="contenu principal" class="mt-5 mb-5 container">
         
         <div class="container">
 
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-3 bg-warning custom-height">
+                <div class="col-sm-12 col-md-12 col-lg-3 bg-warning rounded-2 custom-height">
 
                     <form method="post" action="#">
                         <h2 class="mt-2">Newsletter</h2>
@@ -88,7 +89,7 @@
 
                         <div class="row">
                             <div class="col-lg-6 col-12">
-                                <button type="submit" class="btn btn-primary w-100">soumettre</button>
+                                <button type="submit" class="btn btn-primary w-100 custom-button">soumettre</button>
                             </div>
                         </div>
 
@@ -147,7 +148,7 @@
                             <div class="mb-3 col-sm-12 col-md-12 col-lg-6">
                                 <label for="poste" class="form-label">Code postal</label>
                                 <input type="text" class="form-control" id="poste" name="poste" maxlength="6"
-                                    placeholder="6 caractère">
+                                    placeholder="6 caractères">
                             </div>
 
                             <div class="mb-3 col-12">
@@ -163,11 +164,11 @@
 
                         <div class="row">
                             <div class="col-2">
-                                <button type="submit" class="btn btn-primary w-100">soumettre</button>
+                                <button type="submit" class="btn btn-primary w-100 custom-button">soumettre</button>
                             </div>
 
                             <div class="col-2">
-                                <button type="reset" class="btn btn-primary w-100">Effacer</button>
+                                <button type="reset" class="btn btn-primary w-100 custom-button">Effacer</button>
                             </div>
                         </div>
                     </form>
