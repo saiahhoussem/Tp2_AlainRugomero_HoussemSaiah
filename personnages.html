@@ -21,43 +21,67 @@
     <a href="#contenu_principal_1" class="texte-pour-lecteur">Allez vers contenu principal</a>
     
     <header>
+
         <div class="container text-center p-3">
-            <div class="flex-de">
-                <div>
+            
+            <div class="row d-flex justify-content-between">
+
+                <div class="col-sm-12 col-md-12 col-lg-2">
                     <img src="resources/logo/logo.png" alt="Logo Game Of Thrones" width="250">
                 </div>
-                <div class="boutton-header">
-                    <button type="button" class="btn btn-secondary btn-md">Ouvrir une session</button>
+                <div class="col-sm-12 col-md-12 col-lg-3 pt-5">
+                    <button type="button" class="btn btn-secondary btn-md w-100" data-bs-toggle="modal" data-bs-target="#myModal">Ouvrir une session</button>
                 </div>
             </div>
         </div>
 
-    </header>
+        <div class="modal" id="myModal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content" style="background-color: #fae6bd;">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ouvrir une session</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Cette section est en développement</p>
+                  <p>Vous pouvez écrire à <a href="mailto:example@email.com">stupidcybertruck@gmail.com</a> pour toute assistance.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                  <button type="button" class="btn btn-primary">Ok</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <div class="bg-navbar">
-        <div class="container">
+        <div class="bg-navbar fs-5">
 
-            <nav class="navbar navbar-expand-lg w-100 sticky-top" aria-label="navigation principal">
-                <div class="container-fluid container">
+            <nav class="navbar navbar-expand-lg w-100 sticky-top" aria-label="Navigation principale">
+
+                <div class="container">
 
                     <a class="navbar-brand" href="#">Navigation:</a>
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link" href="index.html">Acceuil</a>
-                            <a class="nav-link active" aria-current="page" href="personnages.html">Personnages</a>
+                            <a class="nav-link" href="personnages.html">Personnages</a>
                             <a class="nav-link" href="description.html">Description des personnages</a>
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
                         </div>
                     </div>
+                    
                 </div>
             </nav>
         </div>
-    </div>
+
+    </header>
 
 
     <main id="contenu_principal_1" aria-label="contenu principal" class="container mt-5 mb-5">
@@ -101,50 +125,51 @@
 
                     <h1>Liste des personnages</h1>
                     <div class="card mt-2" style="width: 18rem; background-color: transparent; border: none;">
-                        <img src="resources/images/joffrey-baratheon.jpg" class="card-img-top" alt="...">
+                        <img src="resources/images/joffrey-baratheon.jpg" class="card-img-top" alt="Personnage Joffrey Baratheon (Lannister) de l'univers Game of thrones">
                         <div class="card-body">
-                            <h5 class="card-title" style="margin-left: -15px;">Card title</h5>
+                            <h5 class="card-title" style="margin-left: -15px;">Joffrey Baratheon</h5>
                             <a href="description.html#personnage_1" class="btn btn-primary"
-                                style="margin-left: -15px;">Go somewhere</a>
+                                style="margin-left: -15px;">Description complète</a>
                         </div>
                     </div>
                     <div class="card mt-2" style="width: 18rem; background-color: transparent; border: none;">
-                        <img src="resources/images/joffrey-baratheon.jpg" class="card-img-top" alt="...">
+                        <img src="resources/images/arya-stark.jpg" class="card-img-top" alt="Arya Stark de l'univers Game of thrones">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title" style="margin-left: -15px;">Arya Stark</h5>
+                            <a href="description.html#personnage_2" class="btn btn-primary"
+                                style="margin-left: -15px;">Description complète</a>
                         </div>
                     </div>
                     <div class="card mt-2" style="width: 18rem; background-color: transparent; border: none;">
-                        <img src="resources/images/joffrey-baratheon.jpg" class="card-img-top" alt="...">
+                        <img src="resources/images/Sansa_Stark.jpg" class="card-img-top" alt="Sansa Stark de l'univers Game of thrones">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title" style="margin-left: -15px;">Sansa Starks</h5>
+                            <a href="description.html#personnage_3" class="btn btn-primary"
+                                style="margin-left: -15px;">Description complète</a>
                         </div>
                     </div>
                     <div class="card mt-2" style="width: 18rem; background-color: transparent; border: none;">
-                        <img src="resources/images/joffrey-baratheon.jpg" class="card-img-top" alt="...">
+                        <img src="resources/images/tyrion-lannister.jpg" class="card-img-top" alt="Tyrion Lannister (La main de la reine) de l'univers Game of thrones">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title" style="margin-left: -15px;">Tyrion Lannister</h5>
+                            <a href="description.html#personnage_4" class="btn btn-primary"
+                                style="margin-left: -15px;">Description complète</a>
                         </div>
                     </div>
                     <div class="card mt-2" style="width: 18rem; background-color: transparent; border: none;">
-                        <img src="resources/images/joffrey-baratheon.jpg" class="card-img-top" alt="...">
+                        <img src="resources/images/john-snow.jpg" class="card-img-top" alt="John Snow (Targaryen) de l'univers Game of thrones">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title" style="margin-left: -15px;">John Snow</h5>
+                            <a href="description.html#personnage_5" class="btn btn-primary"
+                                style="margin-left: -15px;">Description complète</a>
                         </div>
                     </div>
                     <div class="card mt-2" style="width: 18rem; background-color: transparent; border: none;">
-                        <img src="resources/images/joffrey-baratheon.jpg" class="card-img-top" alt="...">
+                        <img src="resources/images/robert-stark.jpg" class="card-img-top" alt="Rob Stark de l'univers Game of thrones">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title" style="margin-left: -15px;">Rob Stark</h5>
+                            <a href="description.html#personnage_6" class="btn btn-primary"
+                                style="margin-left: -15px;">Description complète</a>
                         </div>
                     </div>
 
