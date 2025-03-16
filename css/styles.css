@@ -1,6 +1,5 @@
 @charset "UTF-8";
-/** VOS $VARIABLES Sass ici avant l'importation**/
-/*** Importation de Boostrap **/
+/*** Importation de Bootstrap ***/
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -11978,12 +11977,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/*** Début des styles personnalisés ***/
-h1, .h1 {
-  color: #cbad67;
-  font-size: 4em;
-}
-
+/*** Styles personnalisés ***/
 .texte-pour-lecteur {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -11996,4 +11990,34 @@ h1, .h1 {
   position: absolute;
   width: 1px;
   word-wrap: normal !important;
+}
+
+body {
+  background-color: hsl(40, 86%, 86%);
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.modal-body {
+  background-color: black;
+}
+
+header {
+  background-color: #9f582a;
+}
+header .btn {
+  background-color: #2d1101;
+  color: #f8eaa9;
+}
+
+.bg-navbar {
+  background-color: #f8eaa9;
+  border-bottom: 3.5px solid #2d1101;
+  border-top: 3.5px solid #2d1101;
+}
+
+footer {
+  background-color: #9f582a;
 }/*# sourceMappingURL=styles.css.map */
