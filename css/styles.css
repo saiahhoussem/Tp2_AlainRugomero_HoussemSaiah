@@ -11996,10 +11996,6 @@ body {
   background-color: hsl(40, 86%, 86%);
 }
 
-.text-justify {
-  text-align: justify !important;
-}
-
 .modal-body {
   background-color: black;
 }
